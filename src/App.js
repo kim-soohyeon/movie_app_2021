@@ -1,5 +1,4 @@
 import React from "react";
-import Potato from './Potato';
 
 function App() {
   return(
@@ -8,6 +7,10 @@ function App() {
       <Potato />
     </div>
   );
+}
+
+function Potato(){
+  return <h1>I like potato</h1>
 }
 
 export default App;

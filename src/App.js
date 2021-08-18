@@ -51,7 +51,7 @@ Food.propTypes = {
   //props는 문자열이고 반드시 있어야 한다
   name: PropTypes.string.isRequired,
   picture: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired
+  rating: PropTypes.number
 }
 
 function App() {

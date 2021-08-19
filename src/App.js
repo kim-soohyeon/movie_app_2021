@@ -5,10 +5,10 @@ class App extends React.Component{
     count: 0
   };
   add = () => {
-    this.setState({ count: 1 });
+    this.setState(current => ({ count: current.count + 1}));
   };
   minus = () => {
-    this.setState({ count: -1 });
+    this.setState(current => ({ count: current.count -1 }));
   };
   render(){
     //this.state: 현재 클래스에 선언한 state를 의미함.

@@ -17,6 +17,9 @@ class App extends React.Component{
   componentDidMount(){
     console.log('component renderd')
   }
+  componentDidUpdate(){
+   console.log("I just updated") 
+  }
   render(){
     console.log("I'm rendering");
     //this.state: 현재 클래스에 선언한 state를 의미함.

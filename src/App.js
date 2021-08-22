@@ -1,6 +1,10 @@
 import React from "react";
 
 class App extends React.Component{
+  constructor(props){
+    super(props);
+    console.log("hello");
+  }
   state={
     count: 0
   };
@@ -11,6 +15,7 @@ class App extends React.Component{
     this.setState(current => ({ count: current.count -1 }));
   };
   render(){
+    console.log("rendor");
     //this.state: 현재 클래스에 선언한 state를 의미함.
     return <div>
       <h1>The number is: {this.state.count}</h1>
